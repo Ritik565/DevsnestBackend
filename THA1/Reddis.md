@@ -1,7 +1,10 @@
 INSTALLATION:
 > sudo apt-get update
+> 
 > sudo apt-get upgrade
+> 
 > sudo apt-get install redis-server
+> 
 > redis-cli -v
 
 Restart the Redis server to make sure it is running:
@@ -9,8 +12,11 @@ Restart the Redis server to make sure it is running:
 
 Running Redis :
 $ redis-cli
+
 127.0.0.1:6379> set user:1 "Ritik"
+
 127.0.0.1:6379> get user:1
+
 "Ritik"
 
 WHY WE USE REDIS :
@@ -18,14 +24,23 @@ To save key-val pair (JSON like object) in our local storage
 
 
 REDIS data storage structure Example :
+
 {
+
   "str": "xyz",
+  
   "num": "34",
+  
   "arr": ["val1", "val2", "val3", "valn"],
+  
   "set": ["distinct1", "distinct2", "distinctn"],
+  
   "obj": {
+  
     "field1": "val1",
+    
     "fieldn": "valn"
+    
   }
 }
 
@@ -66,6 +81,7 @@ LRANGE --key-- --start index [0]-- --end index [-1]--  ==> displays every elemen
 
 
 // GET key can't be used in case of array because it operates on strings. So we use LRANGE //
+
 
 
 < SETS >
