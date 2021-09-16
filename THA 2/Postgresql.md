@@ -50,6 +50,8 @@ DROP DATABASE <test>;
 connect to database
 
 \c <test>
+	
+	
 create table
   
 
